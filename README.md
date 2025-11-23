@@ -31,7 +31,7 @@ Webcam (for camera functionality)
 from decoder import process_image_file
 
 # Process an image
-barcode_results, code2d_results = process_image_file('path/to/your/image.jpg')
+### barcode_results, code2d_results = process_image_file('path/to/your/image.jpg')
 
 
 
