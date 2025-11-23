@@ -1,21 +1,37 @@
 # barcode-decoder
-A Python application using Halcon library to decode various 1D barcodes and 2D codes from images.
+A comprehensive Python-based solution for decoding 1D barcodes and 2D codes using MVTec Halcon. This application supports both image file processing and live camera acquisition for real-time code detection.
 
-# Barcode and 2D Code Decoder (Single Image)
+# Supported Code Types
+## 1D Barcodes:
 
-Simple Python script for decoding barcodes and 2D codes from a single image using Halcon.
+- Code 39
+
+- Code 93
+
+- Code 128
+
+- 2D Codes:
+
+## Data Matrix ECC 200
+
+-QR Code
+
+-GS1 DataMatrix
+
+## Installation 
+
+MVTec Halcon with Python interface installed
+
+Python 3.6 or higher
+
+Webcam (for camera functionality)
 
 ## Quick Start
 
-### Process Single Image File
-```python
-python simple_decoder.py
+from decoder import process_image_file
 
-# Features
-1D Barcodes: Code 39, Code 93, Code 128
+# Process an image
+barcode_results, code2d_results = process_image_file('path/to/your/image.jpg')
 
-2D Codes: Data Matrix, QR Code
 
-Camera Support: Live capture from webcam
 
-Simple Setup: Single file implementation
